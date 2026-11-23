@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp" android:height="512dp" android:viewportWidth="512" android:viewportHeight="512">
+    <path android:fillColor="#090307" android:pathData="M64,0h384a64,64 0,0 1,64 64v384a64,64 0,0 1,-64 64h-384a64,64 0,0 1,-64 -64v-384a64,64 0,0 1,64 -64z"/>
+    <path android:fillColor="#240006" android:pathData="M64,14h384a50,50 0,0 1,50 50v384a50,50 0,0 1,-50 50h-384a50,50 0,0 1,-50 -50v-384a50,50 0,0 1,50 -50z"/>
+    <path android:fillColor="#00000000" android:strokeColor="#FF2028" android:strokeWidth="12" android:pathData="M64,14h384a50,50 0,0 1,50 50v384a50,50 0,0 1,-50 50h-384a50,50 0,0 1,-50 -50v-384a50,50 0,0 1,50 -50z"/>
+    <path android:fillColor="#FF2028" android:pathData="M32,110 L90,50 L112,95 L146,32 L174,91 L214,52 L238,111 L212,126 L184,94 L151,130 L115,95 L83,137 Z"/>
+    <path android:fillColor="#FFD34D" android:pathData="M76,92 L94,46 L111,77 L145,23 L168,77 L202,47 L222,96 L204,106 L181,76 L147,111 L111,76 L91,108 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M126,150 L126,364 L183,364 L183,293 L238,293 C304,293 343,259 343,205 C343,151 304,119 239,119 L126,119 Z M183,166 L232,166 C267,166 285,179 285,205 C285,232 267,245 232,245 L183,245 Z"/>
+    <path android:fillColor="#F90018" android:pathData="M280,145 L414,223 L280,301 Z"/>
+    <path android:fillColor="#E50919" android:pathData="M58,380 L453,380 L453,458 L58,458 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M104,399 L104,441 L124,441 L124,428 L144,428 C160,428 170,419 170,408 C170,397 160,389 144,389 L104,389 Z M124,404 L142,404 C149,404 153,406 153,410 C153,414 149,416 142,416 L124,416 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M185,398 L185,441 L201,441 L201,398 Z M213,398 L213,441 L229,441 L229,398 Z M241,398 L241,441 L257,441 L257,398 Z M269,398 L269,441 L285,441 L285,398 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M305,398 L305,441 L321,441 L321,398 Z M333,398 L333,441 L349,441 L349,398 Z M361,398 L361,441 L377,441 L377,398 Z"/>
+</vector>
