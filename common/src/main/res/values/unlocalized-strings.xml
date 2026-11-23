@@ -2,7 +2,7 @@
 <resources>
     <string name="dns_check_mark_works" translatable="false">✓</string>
     <string name="dns_check_mark_fails" translatable="false">✗</string>
-    <string name="releases_url" translatable="false">https://t.me/SmartTubeNewsEN</string>
+    <string name="releases_url" translatable="false">https://github.com/smart222tech/PASHATUBE/releases</string>
     <string name="sources_url" translatable="false">https://github.com/smart222tech/PASHATUBE</string>
     <string name="web_site_url" translatable="false">https://github.com/smart222tech/PASHATUBE</string>
     <string name="content_block_provider" translatable="false">SponsorBlock</string>
