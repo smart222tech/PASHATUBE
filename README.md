@@ -91,12 +91,10 @@ The recommend method of installation the first time is to use [LocalSend](https:
 ### Downloader codes
 <a href="https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en_US"><picture><source height="72px" media="(prefers-color-scheme: dark)" srcset="/assets/icons/Downloader.png" /><img height="72px" src="/assets/icons/Downloader.png" /></picture></a>
 
-**8248268** `PashaTube_stable_arm64-v8a.apk`
-
-**5531853** `PashaTube_stable_armeabi-v7a.apk`
+PashaTube installation packages will be published in [GitHub Releases](https://github.com/smart222tech/PASHATUBE/releases) after the first successful build.
 
 ### Discoverium
-You can install [Discoverium](https://github.com/cygnusx-1-org/Discoverium/), and then install `PashaTube` via it.
+Discoverium installation is not configured for PashaTube yet.
 
 [Discoverium](https://github.com/cygnusx-1-org/Discoverium/) now has `Android TV` support.
 
@@ -142,7 +140,7 @@ You can select which categories you want to skip in the settings. Unlike the bro
 
 ## Support
 
-You can report in our Discord group, using `Settings > Debugging > Submit data` in `PashaTube`, or via [issue tracker on Github](https://github.com/cygnusx-1-org/electriceel/issues) (account required).
+You can report in our Discord group, using `Settings > Debugging > Submit data` in `PashaTube`, or via [issue tracker on Github](https://github.com/smart222tech/PASHATUBE/issues) (account required).
 
 ## Donations
 [<img src="./assets/badges/buymeacoffee_badge.png"
