@@ -20,6 +20,11 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Checkout external build dependencies
+        run: |
+          git clone --depth 1 https://github.com/cygnusx-1-org/SharedModules.git ../SharedModules
+          git clone --depth 1 https://github.com/cygnusx-1-org/MediaServiceCore.git ../MediaServiceCore
+
       - name: Set up JDK 24
         uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
         with:
