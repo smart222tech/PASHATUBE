@@ -1,4 +1,6 @@
-# Electric Eel
+# PashaTube
+
+**PashaTube** is the branded build of this Android TV YouTube client, with a custom PashaTube identity and launcher artwork.
 
 <p align="center" style="margin-top: -2em;">
 <a href="https://discord.gg/vDuSpJEDrW"><picture><source height="24px" media="(prefers-color-scheme: dark)" srcset="/assets/icons/Discord.png" /><img height="24px" src="/assets/icons/Discord.png" /></picture></a>
@@ -16,7 +18,7 @@
 ![The app collage 7](./images/collage20.png)
 ![The app collage 8](./images/collage21.png)
 
-Electric Eel is a fork of [SmartTube](https://github.com/yuliskov/SmartTube), and a free and open-source media client for Android TVs and TV boxes.
+PashaTube is a fork of [SmartTube](https://github.com/yuliskov/SmartTube), and a free and open-source media client for Android TVs and TV boxes.
 
 ### Features
 - Hybrid, Modern, and Classic skins
@@ -75,7 +77,7 @@ Electric Eel is a fork of [SmartTube](https://github.com/yuliskov/SmartTube), an
 
 ## Device support
 > [!IMPORTANT]  
-> Starting in October 2025 new Amazon FireTV devices no longer run Android under the hood. Electric Eel will **not** be compatible with the Fire Stick 4k Select and newer devices which run Amazon's own VegaOS.
+> Starting in October 2025 new Amazon FireTV devices no longer run Android under the hood. PashaTube will **not** be compatible with the Fire Stick 4k Select and newer devices which run Amazon's own VegaOS.
 
 ![Device support image](images/new/compatibility.png)
 * **Supported:** all Android TVs and TV boxes (incl. All FireTV devices released before Oct. 2025, NVIDIA Shield & Chromecast with Google TV), even older ones with Android 7.0 (Nougat).
@@ -89,12 +91,12 @@ The recommend method of installation the first time is to use [LocalSend](https:
 ### Downloader codes
 <a href="https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en_US"><picture><source height="72px" media="(prefers-color-scheme: dark)" srcset="/assets/icons/Downloader.png" /><img height="72px" src="/assets/icons/Downloader.png" /></picture></a>
 
-**8248268** `ElectricEel_stable_arm64-v8a.apk`
+**8248268** `PashaTube_stable_arm64-v8a.apk`
 
-**5531853** `ElectricEel_stable_armeabi-v7a.apk`
+**5531853** `PashaTube_stable_armeabi-v7a.apk`
 
 ### Discoverium
-You can install [Discoverium](https://github.com/cygnusx-1-org/Discoverium/), and then install `Electric Eel` via it.
+You can install [Discoverium](https://github.com/cygnusx-1-org/Discoverium/), and then install `PashaTube` via it.
 
 [Discoverium](https://github.com/cygnusx-1-org/Discoverium/) now has `Android TV` support.
 
@@ -110,14 +112,14 @@ See [YDAKC](https://github.com/cygnusx-1-org/YoutubeDataAPIKeyCreation/).
 
 ### Updating
 
-The app has a built-in updater. You only need to follow the installation procedure **once**. A few seconds after launching Electric Eel, it will notify you if there is any update and also show a changelog. You can disable automatic update checks or manually update in the settings under `Settings | Updates`.
+The app has a built-in updater. You only need to follow the installation procedure **once**. A few seconds after launching PashaTube, it will notify you if there is any update and also show a changelog. You can disable automatic update checks or manually update in the settings under `Settings | Updates`.
 
 If the installation fails, either your **disk space is full** or the update didn't download correctly; clear up space and try updating again (_Settings > Updates > Check for updates_).
 
 
 ## Compatibility
 
-Electric Eel requires Android 7.0 or above. It does not work on non-Android devices (incl. LG or Samsung TVs). On unsupported TVs, you can use a TV stick or TV box. Though this app technically runs on smartphones and tablets, it is not optimized for such and offers no official support!
+PashaTube requires Android 7.0 or above. It does not work on non-Android devices (incl. LG or Samsung TVs). On unsupported TVs, you can use a TV stick or TV box. Though this app technically runs on smartphones and tablets, it is not optimized for such and offers no official support!
 
 It has been successfully tested on TVs, TV boxes and TV sticks that are based on Android, including:
 
@@ -131,16 +133,16 @@ It has been successfully tested on TVs, TV boxes and TV sticks that are based on
 
 ### SponsorBlock
 
-Electric Eel includes optional SponsorBlock integration. From the [SponsorBlock website](https://sponsor.ajay.app/):
+PashaTube includes optional SponsorBlock integration. From the [SponsorBlock website](https://sponsor.ajay.app/):
 
 > SponsorBlock is an open-source crowdsourced browser extension and open API for **skipping sponsor segments** in YouTube videos. [...] the extension automatically skips sponsors **it knows about** using a privacy preserving query system. It also supports skipping **other categories**, such as intros, outros and reminders to subscribe [and non-music parts in music videos].
 
-You can select which categories you want to skip in the settings. Unlike the browser addon, in Electric Eel you cannot submit new segments (TVs and TV remotes aren't great devices for such precise operations). Note that SponsorBlock is a free and voluntary project based on user submissions, so don't expect it to 100% work every time. Sometimes, sponsor segments are not yet submitted to the database, sometimes the SponsorBlock servers are offline/overloaded.
+You can select which categories you want to skip in the settings. Unlike the browser addon, in PashaTube you cannot submit new segments (TVs and TV remotes aren't great devices for such precise operations). Note that SponsorBlock is a free and voluntary project based on user submissions, so don't expect it to 100% work every time. Sometimes, sponsor segments are not yet submitted to the database, sometimes the SponsorBlock servers are offline/overloaded.
 
 
 ## Support
 
-You can report in our Discord group, using `Settings > Debugging > Submit data` in `Electric Eel`, or via [issue tracker on Github](https://github.com/cygnusx-1-org/electriceel/issues) (account required).
+You can report in our Discord group, using `Settings > Debugging > Submit data` in `PashaTube`, or via [issue tracker on Github](https://github.com/cygnusx-1-org/electriceel/issues) (account required).
 
 ## Donations
 [<img src="./assets/badges/buymeacoffee_badge.png"
