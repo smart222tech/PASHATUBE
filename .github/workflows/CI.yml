@@ -39,7 +39,7 @@ jobs:
           sed -i "s/versionName \"\(.*\)\"/versionName \"\1-nightly-${{ github.run_number }}\"/" smarttubetv/build.gradle
           echo "VERSION_NAME=$(grep "versionName" smarttubetv/build.gradle | head -n 1 | awk -F'"' '{print $2}')" >> $GITHUB_OUTPUT
 
-      - name: Configure Build Signing
+      - name: Configure Build Signing (saved release key)
         if: ${{ env.HAS_SIGNING_KEY == 'true' }}
         run: |
           echo "storePassword=${{ secrets.KEY_STORE_PASSWORD }}" > keystore.properties
@@ -47,6 +47,26 @@ jobs:
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> keystore.properties
           echo "storeFile=${{ github.workspace }}/key.jks" >> keystore.properties
           echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > ${{ github.workspace }}/key.jks
+
+      - name: Configure Build Signing (temporary test key)
+        if: ${{ env.HAS_SIGNING_KEY != 'true' }}
+        run: |
+          STORE_PASSWORD="$(openssl rand -hex 24)"
+          KEY_PASSWORD="$STORE_PASSWORD"
+          keytool -genkeypair -noprompt -v \
+            -keystore "${{ github.workspace }}/key.jks" \
+            -storetype JKS \
+            -storepass "$STORE_PASSWORD" \
+            -keypass "$KEY_PASSWORD" \
+            -alias pashatube-ci \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -dname "CN=PashaTube CI, OU=Testing, O=Smart222Tech, C=DE"
+          {
+            echo "storePassword=$STORE_PASSWORD"
+            echo "keyAlias=pashatube-ci"
+            echo "keyPassword=$KEY_PASSWORD"
+            echo "storeFile=${{ github.workspace }}/key.jks"
+          } > keystore.properties
     
       - name: Grant Gradle permissions
         run: chmod +x gradlew
@@ -117,9 +137,3 @@ jobs:
           path: ./smarttubetv/build/outputs/apk/stbeta/release/*_universal.apk
           if-no-files-found: error
 
-      - name: Upload x86 APK
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: PashaTube_${{ steps.get_version.outputs.VERSION_NAME }}_x86
-          path: ./smarttubetv/build/outputs/apk/stbeta/release/*_x86.apk
-          if-no-files-found: error
